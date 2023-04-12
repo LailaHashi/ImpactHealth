@@ -51,7 +51,7 @@
           <li><a class="nav-link scrollto" href="#get-started">Concussions</a></li>
           <li><a class="nav-link scrollto" href="#about-us">About</a></li>
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li><a class="nav-link scrollto" href="#screenshots">Coming Soon</a></li>
+          <li><a class="nav-link scrollto" href="#screenshots">Web App</a></li>
           <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
         </ul>
@@ -176,7 +176,8 @@
         <div class="row justify-content-center">
 
           <div class="col-md-5 col-lg-3">
-            <img src="assets/img/headband.png" alt="About" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/headband.png" alt="About" data-aos="zoom-in" data-aos-delay="100"
+              style="width: 100%; max-width: 500px;">
           </div>
 
           <div class="col-md-7 col-lg-5">
@@ -184,8 +185,7 @@
 
               <h2><span>Impact Health</span>Smart Headband</h2>
               <p>The Impact Health Smart Headband is flexible and adaptible as it can be used for different
-                sport applications. The design focuses on comfort so that it is easy for athletes to wear
-                underneath their helmets. When an athlete has experienced an impact above a predetermined threshold the
+                sport applications. When an athlete has experienced an impact above a predetermined threshold the
                 device sends an alert to a third party. The headband comes with a detachable pocket sealed
                 with velcro so that the user can wash the headband as normal. The features of the headband include:
               </p>
@@ -193,16 +193,20 @@
               <ul class="list-unstyled">
                 <li><i class="vi bi-chevron-right"></i>One accelerometer</li>
                 <li><i class="vi bi-chevron-right"></i>One gyroscope</li>
-                <li><i class="vi bi-chevron-right"></i>Two flexible force resistive sensors</li>
+                <li><i class="vi bi-chevron-right"></i>One FSR</li>
                 <li><i class="vi bi-chevron-right"></i>ESP-WROOM-32 microcontroller</li>
                 <li><i class="vi bi-chevron-right"></i>Rechargable batteries</li>
               </ul>
 
             </div>
           </div>
-
+        </div>
+        <div style="display: flex; justify-content: center; padding-top: 60px;">
+          <img src="assets/img/foamhead.png" data-aos="zoom-in" data-aos-delay="100"
+            style="display: block; max-width: 50%; border-radius: 50%;">
         </div>
       </div>
+
     </section><!-- End About Us Section -->
 
     <!-- ======= Features Section ======= -->
@@ -288,28 +292,36 @@
       </div>
     </section><!-- End Features Section -->
 
-    <!-- ======= Coming Soon Section ======= -->
+    <!-- ======= Web App Section ======= -->
     <section id="screenshots" class="padd-section text-center">
 
       <div class="container" data-aos="fade-up">
         <div class="section-title text-center">
-          <h2>Coming Soon</h2>
-          <p class="separator">Product release March 2023</p>
+          <h2>Impact Health Web App</h2>
         </div>
 
         <div class="screens-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/screen/1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/screen/2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/screen/3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/screen/4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/screen/5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/screen/6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/screen/7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/screen/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/screen/2.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/screen/3.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/screen/4.png" alt=""></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
+
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+
+      </script>
 
     </section><!-- End Coming Soon Section -->
 
@@ -344,7 +356,7 @@
               <img src="assets/img/team/1.png" class="img-responsive" alt="img">
               <div class="team-content">
                 <span>Software Lead</span>
-                <h5>Electrical Support</h5>
+                <h5>Hardware Support</h5>
                 <h4>Selina Hsu</h4>
               </div>
             </div>
@@ -355,7 +367,7 @@
               <img src="assets/img/team/2.png" class="img-responsive" alt="img">
               <div class="team-content">
                 <span>Mechanical Lead</span>
-                <h5>Electrical Support</h5>
+                <h5>Hardware Support</h5>
                 <h4>Rachel Du</h4>
               </div>
             </div>
@@ -365,7 +377,7 @@
             <div class="team-block bottom">
               <img src="assets/img/team/3.png" class="img-responsive" alt="img">
               <div class="team-content">
-                <span>Electrical Lead</span>
+                <span>Hardware Lead</span>
                 <h5>Software Support</h5>
                 <h4>Laila Hashi</h4>
               </div>

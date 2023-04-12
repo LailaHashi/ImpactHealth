@@ -826,6 +826,16 @@ section {
   background-color: #71c55d;
 }
 
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.swiper-slide {
+  width: 50% !important;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
 
 /* Team Section
